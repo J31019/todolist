@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class SerDeser {
     public void ser(AddingData addingData){
-        File file = new File("D:/tasks.data");
+        File file = new File("tasks.data");
         ObjectOutputStream oos = null;
         try {
             FileOutputStream fos = new FileOutputStream(file);
@@ -27,7 +27,7 @@ public class SerDeser {
         }
     }
     public HashMap deser() throws InvalidObjectException {
-        File file = new File("D:/tasks.data");
+        File file = new File("tasks.data");
         ObjectInputStream ois = null;
         AddingData addingData = new AddingData();
         try {
@@ -50,6 +50,6 @@ public class SerDeser {
                 e.printStackTrace();
             }
         }
-        throw new InvalidObjectException("что то пошло не так...");
+        throw new InvalidObjectException("что-то пошло не так...");
     }
 }

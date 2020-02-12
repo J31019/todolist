@@ -69,13 +69,13 @@ public class AddingData implements Serializable {
                             }
                             break;
                         case "3":
-                            dateTaskStatus.get(date).get(option - 1).status = "Выполнено";
+                            dateTaskStatus.get(date).get(option - 1).status = Status.ISDONE.getStatus();
                             break;
                         case "4":
                             if (dateTaskStatus.size()==0){
                                 System.out.println("Заданий нет");
                             }else {
-                            dateTaskStatus.get(date).get(option - 1).status = "Не выполнено";}
+                            dateTaskStatus.get(date).get(option - 1).status = Status.ISNOTDONE.getStatus();}
                             break;
                         default:
                             System.out.println("Ошибка ввода");
@@ -88,7 +88,7 @@ public class AddingData implements Serializable {
                 }
                 }
             else {
-                System.out.println("ошибка ввода");
+                System.out.println("Ошибка ввода");
             }
         } catch (InputMismatchException e) {
             System.out.println("Ошибка ввода номера задания");
@@ -213,7 +213,7 @@ public class AddingData implements Serializable {
                         }
                         System.out.println("Введите описание задания");
                         String task = ss.nextLine();
-                        String status = "Невыполнено";
+                        String status = Status.ISNOTDONE.getStatus();
                         addDate(date, task, status);
                         break;
                     case "2":

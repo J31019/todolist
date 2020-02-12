@@ -11,6 +11,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -19,6 +20,9 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -67,6 +71,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" width="816" height="732" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1579107459860" />
+    <state x="732" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581519192277">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="732" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581519192277" />
     <state x="331" y="232" key="#com.intellij.ide.util.MemberChooser" timestamp="1579189050904">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -75,21 +83,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579544497251" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1579591957801">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1581520409720">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579591957801" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1579591957801">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581520409720" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1581520411746">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579591957801" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1579591957801">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581520411746" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1581520411746">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579591957801" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1579591957801">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581520411746" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1581520411746">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579591957801" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581520411746" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1581520411746">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581520411746" />
+    <state x="342" y="140" key="new project wizard" timestamp="1579592212178">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="140" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1579592212178" />
   </component>
 </project>
