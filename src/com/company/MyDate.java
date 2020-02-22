@@ -22,8 +22,8 @@ public class MyDate {
         } else {
             while (true) {
                 System.out.print("Введите дату: \r");
-
-                 Date date = MyScaner.getScaner();
+                String s = MyScaner.getScaner();
+                Date date = day.parse(s);
 
                 if (numberDate == 1) {
                     if (choosDate(date, today)) {
