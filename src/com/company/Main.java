@@ -6,12 +6,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-      try {
+          try {
             MyMenu.getMyMenu();
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ParseException e) {
-            e.printStackTrace();
-        }
+          System.out.println("Проверьте ввод даты");
+      }
     }
 }

@@ -1,75 +1,30 @@
 package com.company;
 
-import java.util.Calendar;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class MyScaner {
-    static Calendar calendar = Calendar.getInstance();
 
-    public static String getScaner() {
+
+    public static Date getScaner() {
+        Date date = null;
+        String symbol;
         while (true) {
-            char[] symbol = null;
-            String date = "";
-            String year = "";
-            String month = "";
-            String day = "";
-
             Scanner scanner = new Scanner(System.in);
             System.out.println("Введите дату в следующем формате \"ДД/ММ/ГГГГ\": ");
-            symbol = scanner.nextLine().toCharArray();
-
-            if ((symbol.length - 1) == 9) {
-
-                for (int i = 0; i < 10; i++) {
-
-                    if ((i == 0 || i == 1 || i == 3 || i == 4 || i == 6 || i == 7 || i == 8 || i == 9)) {
-
-                        if (0 <= i && i < 2) {
-                            day += symbol[i];
-                        }
-
-                        if (3 <= i && i < 5) {
-                            month += symbol[i];
-                        }
-
-                        if (6 <= i && i < 10) {
-                            year += symbol[i];
-                        }
-
-                        if (symbol[i] >= '0' && symbol[i] <= '9') {
-                           if (i == 9) {
-
-                                if (0 <= Integer.parseInt(month) && Integer.parseInt(month) <= 12) {
-                                    calendar.set(Integer.parseInt(year), Integer.parseInt(month)-1, 1);
-                                    if (0 < Integer.parseInt(day) && Integer.parseInt(day) <= calendar.getActualMaximum(Calendar.DAY_OF_MONTH)) {
-                                        date = day + '/' + month + '/' + year;
-                                    } else {
-                                        System.out.println("Неверно указан день.");
-                                        break;
-                                    }
-                                } else {
-                                    System.out.println("Неверно указан месяц.");
-                                    break;
-                                }
-                               return date;
-                            }
-                        } else {
-                            System.out.println("ошибка ввода: здесь должна присутствовать цифра");
-                            break;
-                        }
-                    }
-                    if (i == 2 || i == 5) {
-                        if (symbol[i] != '/') {
-                            System.out.println("ошибка ввода: здесь должна присутствовать \"/\":");
-                            break;
-                        }
-                    }
-                }
-            } else {
-                System.out.println("Неверный формат даты.\n Повторите попытку.");
+            symbol = scanner.nextLine();
+            try {
+                SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+                sdf.setLenient(false);
+                date = sdf.parse(symbol);
+                return date;
+            } catch (ParseException e) {
+                System.out.println("Проверьте введенную дату.");
             }
         }
-
     }
 
 
