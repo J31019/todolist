@@ -22,9 +22,7 @@ public class MyDate {
         } else {
             while (true) {
                 System.out.print("Введите дату: \r");
-                String s = MyScaner.getScaner();
-                Date date = day.parse(s);
-
+                Date date = MyScaner.getScaner();
                 if (numberDate == 1) {
                     if (choosDate(date, today)) {
                         return day.format(date);
