@@ -1,5 +1,6 @@
 package com.company;
 
+import java.io.File;
 import java.util.Scanner;
 
 public class Main {
@@ -7,11 +8,9 @@ public class Main {
     public static void main(String[] args) {
 
         Relis reliss = new Relis();
-
-
+        reliss.readMapp();
         Scanner sc = new Scanner(System.in);
-        boolean bb;
-        while (bb = true) {
+        while (true) {
             System.out.println("Главное меню");
             System.out.println("1. Добавить задание");
             System.out.println("2. Выбрать задание");
@@ -38,7 +37,6 @@ public class Main {
                     }
                     catch (MyExeption3 myExeption3) {
                         System.err.println(myExeption3.getMessage());
-
                     }
                     break;
                 case 3:
@@ -53,12 +51,11 @@ public class Main {
                     }
                     break;
                 case 4:
-
+                    reliss.saveMapp();
                     System.out.println("Хорошего Вам дня!");
-                    bb = false;
                     return;
                 default:
-                    System.err.println(" Неверно выбран пункт меню!");
+                    System.err.println("Неверно выбран пункт меню!");
             }
 
         }
